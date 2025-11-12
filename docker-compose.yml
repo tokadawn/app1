@@ -15,7 +15,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    working_dir: /workspace/backend
+    working_dir: /workspace
     volumes:
       - .:/workspace:cached
     ports:
@@ -27,7 +27,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    working_dir: /workspace/frontend
+    working_dir: /workspace
     volumes:
       - .:/workspace:cached
     ports:

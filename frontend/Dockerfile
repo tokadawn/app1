@@ -1,6 +1,6 @@
 FROM node:20
 
-WORKDIR /workspace/frontend
+WORKDIR /workspace
 
 RUN npm install -g npm@latest
 

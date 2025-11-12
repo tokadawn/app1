@@ -1,6 +1,6 @@
 FROM python:3.12
 
-WORKDIR /workspace/backend
+WORKDIR /workspace
 
 RUN python -m pip install --upgrade pip
 
