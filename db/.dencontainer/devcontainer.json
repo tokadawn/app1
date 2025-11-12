@@ -1,0 +1,12 @@
+{
+  "name": "Database",
+  "image": "mysql:8.0",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "none",
+  "remoteUser": "root",
+  "forwardPorts": [3306],
+  "containerEnv": {
+    "MYSQL_ROOT_PASSWORD": "password",
+    "MYSQL_DATABASE": "app1_db"
+  }
+}
