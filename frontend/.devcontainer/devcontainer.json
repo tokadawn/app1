@@ -1,0 +1,17 @@
+{
+  "name": "frontend DevContainer",
+  "dockerFile": "../Dockerfile",
+  "workspaceFolder": "/workspace/frontend",
+  "shutdownAction": "none",
+  "remoteUser": "root",
+  "forwardPorts": [5173],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
