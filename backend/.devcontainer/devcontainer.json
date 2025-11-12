@@ -5,6 +5,9 @@
   "shutdownAction": "none",
   "remoteUser": "root",
   "forwardPorts": [8000],
+  "mounts": [
+    "source=${localWorkspaceFolder}/backend,target=/workspace/backend,type=bind,consistency=cached"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
