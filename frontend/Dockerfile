@@ -6,6 +6,7 @@ RUN npm install -g npm@latest
 
 EXPOSE 5173
 
-#コンテナ起動用
-CMD ["sleep", "infinity"]
+# コンテナ起動用
+# CMD ["sleep", "infinity"]
 
+CMD ["npm", "run", "dev", "--", "--host"]
