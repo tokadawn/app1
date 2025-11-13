@@ -1,13 +1,11 @@
 {
   "name": "backend DevContainer",
-  "dockerFile": "../Dockerfile",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "backend",
   "workspaceFolder": "/workspace",
   "shutdownAction": "none",
   "remoteUser": "root",
   "forwardPorts": [8000],
-  "mounts": [
-    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
-  ],
   "customizations": {
     "vscode": {
       "extensions": [

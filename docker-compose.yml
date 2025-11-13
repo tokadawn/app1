@@ -4,8 +4,10 @@ services:
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: app1_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
     volumes:
@@ -17,7 +19,7 @@ services:
       dockerfile: Dockerfile
     working_dir: /workspace
     volumes:
-      - .:/workspace:cached
+      - ./backend:/workspace:cached
     ports:
       - "8000:8000"
     depends_on:
@@ -29,7 +31,7 @@ services:
       dockerfile: Dockerfile
     working_dir: /workspace
     volumes:
-      - .:/workspace:cached
+      - .frontend:/workspace:cached
     ports:
       - "5173:5173"
     depends_on:

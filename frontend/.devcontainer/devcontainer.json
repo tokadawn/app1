@@ -1,13 +1,11 @@
 {
   "name": "frontend DevContainer",
-  "dockerFile": "../Dockerfile",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "frontend",
   "workspaceFolder": "/workspace",
   "shutdownAction": "none",
   "remoteUser": "root",
   "forwardPorts": [5173],
-  "mounts": [
-    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
-  ],
   "customizations": {
     "vscode": {
       "extensions": [
