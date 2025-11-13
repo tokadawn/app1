@@ -1,15 +1,16 @@
 {
-  "name": "backend DevContainer",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "backend",
+  "name": "frontend DevContainer",
+  "dockerComposeFile": "../../docker-compose.yml",
+  "service": "frontend",
   "workspaceFolder": "/workspace",
   "shutdownAction": "none",
   "remoteUser": "root",
-  "forwardPorts": [8000],
+  "forwardPorts": [5173],
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-python.python",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
         "ms-azuretools.vscode-docker"
       ]
     }
